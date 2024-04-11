@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>LoginPage.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+LoginPage.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.*;</span>
+
+<span class="s0">class </span><span class="s1">LoginDemo </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">JFrame frame </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JFrame</span><span class="s2">(</span><span class="s3">&quot;Login Demo&quot;</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setSize</span><span class="s2">(</span><span class="s4">300</span><span class="s2">, </span><span class="s4">200</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setDefaultCloseOperation</span><span class="s2">(</span><span class="s1">JFrame</span><span class="s2">.</span><span class="s1">EXIT_ON_CLOSE</span><span class="s2">);</span>
+
+        <span class="s1">JPanel panel </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JPanel</span><span class="s2">();</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">panel</span><span class="s2">);</span>
+        <span class="s1">placeComponents</span><span class="s2">(</span><span class="s1">panel</span><span class="s2">);</span>
+
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">private static void </span><span class="s1">placeComponents</span><span class="s2">(</span><span class="s1">JPanel panel</span><span class="s2">) {</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">setLayout</span><span class="s2">(</span><span class="s0">null</span><span class="s2">);</span>
+
+        <span class="s1">JLabel userLabel </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JLabel</span><span class="s2">(</span><span class="s3">&quot;Email:&quot;</span><span class="s2">);</span>
+        <span class="s1">userLabel</span><span class="s2">.</span><span class="s1">setBounds</span><span class="s2">(</span><span class="s4">10</span><span class="s2">, </span><span class="s4">20</span><span class="s2">, </span><span class="s4">80</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">userLabel</span><span class="s2">);</span>
+
+        <span class="s1">JTextField userText </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JTextField</span><span class="s2">(</span><span class="s4">20</span><span class="s2">);</span>
+        <span class="s1">userText</span><span class="s2">.</span><span class="s1">setBounds</span><span class="s2">(</span><span class="s4">100</span><span class="s2">, </span><span class="s4">20</span><span class="s2">, </span><span class="s4">165</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">userText</span><span class="s2">);</span>
+
+        <span class="s1">JLabel passwordLabel </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JLabel</span><span class="s2">(</span><span class="s3">&quot;Password:&quot;</span><span class="s2">);</span>
+        <span class="s1">passwordLabel</span><span class="s2">.</span><span class="s1">setBounds</span><span class="s2">(</span><span class="s4">10</span><span class="s2">, </span><span class="s4">50</span><span class="s2">, </span><span class="s4">80</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">passwordLabel</span><span class="s2">);</span>
+
+        <span class="s1">JPasswordField passwordText </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JPasswordField</span><span class="s2">(</span><span class="s4">20</span><span class="s2">);</span>
+        <span class="s1">passwordText</span><span class="s2">.</span><span class="s1">setBounds</span><span class="s2">(</span><span class="s4">100</span><span class="s2">, </span><span class="s4">50</span><span class="s2">, </span><span class="s4">165</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">passwordText</span><span class="s2">);</span>
+
+        <span class="s1">JButton loginButton </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JButton</span><span class="s2">(</span><span class="s3">&quot;Login&quot;</span><span class="s2">);</span>
+        <span class="s1">loginButton</span><span class="s2">.</span><span class="s1">setBounds</span><span class="s2">(</span><span class="s4">10</span><span class="s2">, </span><span class="s4">80</span><span class="s2">, </span><span class="s4">80</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">loginButton</span><span class="s2">);</span>
+
+        <span class="s1">JLabel successLabel </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JLabel</span><span class="s2">(</span><span class="s3">&quot;&quot;</span><span class="s2">);</span>
+        <span class="s1">successLabel</span><span class="s2">.</span><span class="s1">setBounds</span><span class="s2">(</span><span class="s4">10</span><span class="s2">, </span><span class="s4">110</span><span class="s2">, </span><span class="s4">300</span><span class="s2">, </span><span class="s4">25</span><span class="s2">);</span>
+        <span class="s1">panel</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">successLabel</span><span class="s2">);</span>
+
+        <span class="s1">loginButton</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s1">e -&gt; </span><span class="s2">{</span>
+            <span class="s1">String email </span><span class="s2">= </span><span class="s1">userText</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">();</span>
+            <span class="s1">String password </span><span class="s2">= </span><span class="s0">new </span><span class="s1">String</span><span class="s2">(</span><span class="s1">passwordText</span><span class="s2">.</span><span class="s1">getPassword</span><span class="s2">());</span>
+
+            <span class="s5">// Replace this with your own logic for authentication</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">email</span><span class="s2">.</span><span class="s1">equals</span><span class="s2">(</span><span class="s3">&quot;parminder@example.com&quot;</span><span class="s2">) &amp;&amp; </span><span class="s1">password</span><span class="s2">.</span><span class="s1">equals</span><span class="s2">(</span><span class="s3">&quot;paras11&quot;</span><span class="s2">)) {</span>
+                <span class="s1">successLabel</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Login Successful!&quot;</span><span class="s2">);</span>
+            <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                <span class="s1">successLabel</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Incorrect Email or Password!&quot;</span><span class="s2">);</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
